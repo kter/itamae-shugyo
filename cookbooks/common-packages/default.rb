@@ -17,3 +17,11 @@ packages.each do | package |
   action :install
   end
 end
+
+service "ntpd" do
+  action :start
+end
+
+service "ntpd" do
+  action :enable
+end
