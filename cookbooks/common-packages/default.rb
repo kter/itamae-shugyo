@@ -65,3 +65,8 @@ end
 execute "echo '%kter ALL=(ALL) ALL' >> /etc/sudoers" do
   not_if "grep '%kter ALL=(ALL) ALL' /etc/sudoers"
 end
+
+link "/etc/localtime" do
+  to "/usr/share/zoneinfo/Asia/Tokyo"
+  force true
+end

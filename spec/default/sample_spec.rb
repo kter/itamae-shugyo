@@ -36,3 +36,7 @@ end
 describe file('/etc/sudoers') do
   it { should contain '%kter ALL=(ALL) ALL' }
 end
+
+describe command('date') do
+  its(:stdout) { should match /JST/ }
+end
