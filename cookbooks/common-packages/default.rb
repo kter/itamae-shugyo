@@ -1,6 +1,15 @@
 packages = %w(
   vim-enhanced
   zsh
+  telnet
+  tcpdump
+  ntp
+  wget
+  logwatch
+  sysstat
+  lsof
+  man
+  @development
 )
 
 packages.each do | package |
