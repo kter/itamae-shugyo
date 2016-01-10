@@ -53,3 +53,7 @@ end
 execute "/home/kter/.dotfiles/init.sh" do
   user "kter"
 end
+
+execute "curl https://raw.githubusercontent.com/Shougo/neobundle.vim/master/bin/install.sh | sh" do
+  user "kter"
+end
