@@ -70,3 +70,14 @@ link "/etc/localtime" do
   to "/usr/share/zoneinfo/Asia/Tokyo"
   force true
 end
+
+git "/home/kter/.dotfiles" do
+  # repository "git@github.com:kter/settings.git"
+  repository "https://github.com/kter/settings.git"
+  destination "/home/kter/.dotfiles"
+  user "kter"
+end
+
+execute "/home/kter/.dotfiles/init.sh" do
+  user "kter"
+end

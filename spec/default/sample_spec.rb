@@ -40,3 +40,10 @@ end
 describe command('date') do
   its(:stdout) { should match /JST/ }
 end
+
+describe file('/home/kter/.dotfiles') do
+  it { should be_directory } 
+  it { should be_owned_by "kter" }
+end
+
+
