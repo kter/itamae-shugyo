@@ -69,3 +69,7 @@ end
 execute "git config --global user.name kter && git config --global user.email me@kter.jp" do
   user "kter"
 end
+
+execute "curl -fLo ~/.zplug/zplug --create-dirs https://git.io/zplug" do
+  user "kter"
+end

@@ -26,3 +26,8 @@ describe file('/home/kter/.gitconfig') do
   it { should be_file }
   it { should contain 'name = kter' }
 end
+
+describe file('/home/kter/.zplug/zplug') do
+  it { should be_file }
+  it { should contain 'name = kter' }
+end
