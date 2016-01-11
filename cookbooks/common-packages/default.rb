@@ -1,3 +1,7 @@
+execute "yum update -y" do
+  user "root"
+end
+
 packages = %w(
   vim-enhanced
   zsh

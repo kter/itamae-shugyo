@@ -57,3 +57,11 @@ end
 execute "curl https://raw.githubusercontent.com/Shougo/neobundle.vim/master/bin/install.sh | sh" do
   user "kter"
 end
+
+package "xclip" do
+  action :install
+end
+
+package "xsel" do
+  action :install
+end
