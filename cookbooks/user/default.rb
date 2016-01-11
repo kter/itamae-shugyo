@@ -57,3 +57,7 @@ end
 execute "curl https://raw.githubusercontent.com/Shougo/neobundle.vim/master/bin/install.sh | sh" do
   user "kter"
 end
+
+execute "git config --global user.name kter && git config --global user.email me@kter.jp" do
+  user "kter"
+end
