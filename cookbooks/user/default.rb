@@ -65,3 +65,7 @@ end
 package "xsel" do
   action :install
 end
+
+execute "git config --global user.name kter && git config --global user.email me@kter.jp" do
+  user "kter"
+end
