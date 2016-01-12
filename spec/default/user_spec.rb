@@ -31,7 +31,7 @@ describe file('/home/kter/.zplug/zplug') do
   it { should be_file }
 end
 
-describe package('xcel') do
+describe package('xsel') do
   it { should be_installed }
 end
 
