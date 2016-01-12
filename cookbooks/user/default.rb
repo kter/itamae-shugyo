@@ -58,11 +58,17 @@ execute "curl https://raw.githubusercontent.com/Shougo/neobundle.vim/master/bin/
   user "kter"
 end
 
+package "epel-release" do
+  action :install
+end
+
 package "xclip" do
+  options "--enablerepo=epel"
   action :install
 end
 
 package "xsel" do
+  options "--enablerepo=epel"
   action :install
 end
 

@@ -30,3 +30,11 @@ end
 describe file('/home/kter/.zplug/zplug') do
   it { should be_file }
 end
+
+describe package('xcel') do
+  it { should be_installed }
+end
+
+describe package('xclip') do
+  it { should be_installed }
+end
