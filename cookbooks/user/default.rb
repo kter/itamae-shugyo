@@ -43,6 +43,14 @@ link "/etc/localtime" do
   force true
 end
 
+package "ncurses-libs.i686" do
+  action :install
+end
+
+package "ld-linux.so.2" do
+  action :install
+end
+
 git "/home/kter/.dotfiles" do
   # repository "git@github.com:kter/settings.git"
   repository "https://github.com/kter/settings.git"
