@@ -80,7 +80,7 @@ package "xsel" do
   action :install
 end
 
-execute "git config --global user.name kter && git config --global user.email me@kter.jp" do
+execute "git config --global user.name kter && git config --global user.email me@kter.jp && git config --global core.quotepath false" do
   user "kter"
 end
 
